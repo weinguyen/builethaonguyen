@@ -8,8 +8,9 @@
     --color-light-text: #666;
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Be Vietnam Pro', sans-serif;
-    --font-script: 'Caveat', 'Mali', cursive;
+    --font-script: 'Pinyon Script', 'Great Vibes', 'Alex Brush';
     --transition: all 0.3s ease;
+    --font-tab: 'Dancing Script', cursive;
 }
 
 * {
@@ -56,12 +57,7 @@ h6 {
 }
 
 
-.abc-script {
-    font-family: 'Pinyon Script', 'Great Vibes', 'Alex Brush';
-    font-weight: normal;
-    letter-spacing: 1px;
-    position: relative;
-}
+
 
 /* Add decorative swashes to elegant script headings */
 .elegant-script::before,
@@ -542,16 +538,20 @@ nav {
 }
 
 .tab-btn {
-    padding: 12px 25px;
+    padding: 12px 30px;
     background-color: transparent;
     border: 2px solid var(--color-secondary);
     border-radius: 30px;
     color: var(--color-primary);
-    font-family: var(--font-body);
-    font-size: 1rem;
-    font-weight: 500;
+    font-family: var(--font-tab);
+    font-size: 1.8rem;
+    /* Tăng kích thước cho font chữ viết tay */
+
+    font-weight: 600;
     cursor: pointer;
     transition: var(--transition);
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 .tab-btn.active,
@@ -629,8 +629,8 @@ nav {
     border: 2px solid var(--color-secondary);
     border-radius: 25px;
     color: var(--color-primary);
-    font-family: var(--font-body);
-    font-size: 0.9rem;
+    font-family: var(--font-tab);
+    font-size: 1.5rem;
     font-weight: 500;
     cursor: pointer;
     transition: var(--transition);
@@ -1248,7 +1248,7 @@ footer {
 
     .filter-btn {
         padding: 6px 15px;
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
 }
 
