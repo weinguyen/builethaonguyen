@@ -357,13 +357,15 @@ nav {
 
 .about-image {
     flex: 1;
+    max-width: 400px;
 }
 
 .image-container {
     position: relative;
-    padding-bottom: 120%;
+    aspect-ratio: 3/4;
     overflow: hidden;
     border-radius: 10px;
+    width: 100%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -1073,8 +1075,13 @@ footer {
     }
 
     .about-image {
-        max-width: 400px;
+        width: 100%;
+        max-width: 300px;
         margin: 0 auto 40px;
+    }
+
+    .image-container {
+        aspect-ratio: 1;
     }
 
     .timeline-content {
